@@ -1,9 +1,9 @@
 # Do
 
 
-### Initialize Object then set its properties.
+## Initialize Object then set its properties.
 
-#### How to use?
+### How to use?
 
 ```kotlin
     val layout = LinearLayout(this).then {
@@ -18,7 +18,7 @@
     }
 ```
 
-#### Gradle
+### Gradle
 
 Add it in your root build.gradle at the end of repositories:
 
@@ -32,7 +32,7 @@ Add it in your root build.gradle at the end of repositories:
 Add the dependency
 
 	dependencies {
-		compile 'com.github.adgvcxz:Do:1.0.0'
+		compile 'com.github.adgvcxz:do:1.0.1'
 	}
     	
 ## LICENSE
