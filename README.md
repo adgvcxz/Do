@@ -3,21 +3,38 @@
 
 ### Initialize Object then set its properties.
 
-##### How to use?
+#### How to use?
 
 ```kotlin
-        val layout = LinearLayout(this).then {
-            it.setBackgroundColor(Color.RED)
-            it.orientation = LinearLayout.HORIZONTAL
-            it.gravity = Gravity.CENTER
-        }
-        val view = TextView(this).then {
-            it.text = getString(R.string.app_name)
-            it.setTextColor(Color.WHITE)
-            it.layoutParams = ViewGroup.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT)
-        }
+    val layout = LinearLayout(this).then {
+        it.setBackgroundColor(Color.RED)
+        it.orientation = LinearLayout.HORIZONTAL
+        it.gravity = Gravity.CENTER
+    }
+    val view = TextView(this).then {
+        it.text = getString(R.string.app_name)
+        it.setTextColor(Color.WHITE)
+        it.layoutParams = ViewGroup.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT)
+    }
 ```
 
+#### Gradle
+
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+Add the dependency
+
+	dependencies {
+		compile 'com.github.adgvcxz:Do:1.0.0'
+	}
+    	
 ## LICENSE
 
     Copyright 2017 adgvcxz
